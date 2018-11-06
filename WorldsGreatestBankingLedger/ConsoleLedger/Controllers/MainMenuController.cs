@@ -50,7 +50,7 @@ namespace ConsoleLedger.Controllers
                     case Deposit:
                         {
                             decimal d = GetDeposit();
-                            if (d > -1)
+                            if (d > 0)
                             {
                                 _am.Deposit(d);
                             }
@@ -59,7 +59,7 @@ namespace ConsoleLedger.Controllers
                     case Withdrawal:
                         {
                             decimal d = GetWithdrawal();
-                            if (d > -1)
+                            if (d > 0)
                             {
                                 _am.Withdrawal(d);
                             }
@@ -109,8 +109,7 @@ namespace ConsoleLedger.Controllers
             _srw.WriteString(string.Format(Prompt.EnterWithdrawal, Validation.WithdrawalMax));
             var withdrawal = _srw.ReadString();
 
-            decimal d = -1m;
-            var success = decimal.TryParse(withdrawal, out d) && d <= Validation.WithdrawalMax && d > Validation.WithdrawalMin;
+            var success = decimal.TryParse(withdrawal, out var d) && d <= Validation.WithdrawalMax && d > Validation.WithdrawalMin;
 
             var message = success ? string.Format(Validation.WithdrawalSuccess, d.ToString(FormatString.CurrencyFormat)) :
                 string.Format(ErrorString.WithdrawalEntry, Validation.WithdrawalMax, Validation.WithdrawalMin);
@@ -136,8 +135,7 @@ namespace ConsoleLedger.Controllers
             _srw.WriteString(string.Format(Prompt.EnterDeposit, Validation.DepositMax));
             var deposit = _srw.ReadString();
 
-            decimal d = -1m;
-            var success = decimal.TryParse(deposit, out d) && d <= Validation.DepositMax && d > Validation.DepositMin;
+            var success = decimal.TryParse(deposit, out var d) && d <= Validation.DepositMax && d > Validation.DepositMin;
 
             var message = success ? string.Format(Validation.DepositSuccess, d.ToString(FormatString.CurrencyFormat)) : 
                 string.Format(ErrorString.DepositEntry, Validation.DepositMax, Validation.DepositMin);
