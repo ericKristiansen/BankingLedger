@@ -1,0 +1,26 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "History";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <div class="center-block">
+
+        @Html.Partial("AccountPartialView")
+
+        <div class="container-fluid">
+            
+            <h2 class="text-center">Account History</h2>
+
+            <table class="table-striped table-responsive col-lg-12">
+                @foreach (var h in Model)
+                {
+                    <tr><td><h5>@h</h5></td></tr>
+                }
+            </table>
+
+        </div>
+
+</div>
+</div>

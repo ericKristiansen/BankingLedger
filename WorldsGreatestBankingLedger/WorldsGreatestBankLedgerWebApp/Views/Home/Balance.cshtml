@@ -1,0 +1,30 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "Balance";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+    <div class="center-block">
+
+        @Html.Partial("AccountPartialView")
+
+
+        <div class="container-fluid">
+
+            <h2 class="text-center">Account Balance</h2>
+
+            <table class="table-striped table-responsive col-lg-12">
+                <tr>
+                    <td><h4>@ViewBag.AccountName</h4></td>
+                </tr>
+                <tr>
+                    <td><h4>@ViewBag.AccountBalance</h4></td>
+                </tr>
+            </table>
+
+        </div>
+
+        </div>
+</div>

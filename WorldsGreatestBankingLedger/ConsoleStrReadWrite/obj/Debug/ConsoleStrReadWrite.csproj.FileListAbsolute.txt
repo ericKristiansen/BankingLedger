@@ -1,0 +1,6 @@
+C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\ConsoleStrReadWrite\bin\Debug\ConsoleStrReadWrite.dll
+C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\ConsoleStrReadWrite\bin\Debug\ConsoleStrReadWrite.pdb
+C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\ConsoleStrReadWrite\obj\Debug\ConsoleStrReadWrite.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\ConsoleStrReadWrite\obj\Debug\ConsoleStrReadWrite.dll
+C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\ConsoleStrReadWrite\obj\Debug\ConsoleStrReadWrite.pdb
+C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\ConsoleStrReadWrite\obj\Debug\ConsoleStrReadWrite.csprojAssemblyReference.cache

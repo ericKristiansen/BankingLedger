@@ -1,0 +1,36 @@
+﻿@model WorldsGreatestBankLedgerWebApp.Data.AccountData
+@{
+    ViewBag.Title = "Withdrawal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="jumbotron">
+    <div class="center-block">
+
+        @Html.Partial("AccountPartialView")
+
+
+        <div class="container-fluid">
+
+            <h2 class=" col-lg-4 col-lg-offset-4">Make A Withdrawal</h2>
+
+
+            @using (Html.BeginForm("ProcessWithdrawal", "Home", FormMethod.Post))
+            {
+                <table class="table col-lg-4 col-lg-offset-4">
+                    <tr>
+                        <td>@Html.EditorFor(model => model.Withdrawal, new { htmlAttributes = new { @class = "input-lg col-lg-4", placeholder = "Amount $$" } })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="withdrawal" class=" btn-primary btn-block input-lg" value="Process"></td>
+                    </tr>
+                </table>
+            }
+
+        </div>
+
+    </div>
+</div>
+
+        @Html.Partial("MessagePartialView")

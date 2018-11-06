@@ -1,0 +1,39 @@
+﻿@model WorldsGreatestBankLedgerWebApp.Data.AccountData
+@{
+    ViewBag.Title = "Deposit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="jumbotron">
+    <div class="center-block">
+
+        @Html.Partial("AccountPartialView")
+
+
+        <div class="container-fluid">
+
+            <h2 class=" col-lg-4 col-lg-offset-4">Make A Deposit</h2>
+
+            @using (Html.BeginForm("ProcessDeposit", "Home", FormMethod.Post))
+            {
+                <table class="table col-lg-4 col-lg-offset-4">
+                    <tr>
+                        <td>@Html.EditorFor(model => model.Deposit, new { htmlAttributes = new { @class = "input-lg col-xs-4", placeholder = "Amount $$" } })</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="deposit" class=" btn-primary btn-block input-lg" value="Process"></td>
+                    </tr>
+                </table>
+            }
+
+        </div>
+
+
+        </div>
+    </div>
+
+
+
+        @Html.Partial("MessagePartialView")
+

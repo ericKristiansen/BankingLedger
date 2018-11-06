@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "LoginError";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<h2>LoginError</h2>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Encountered an Error</title>
+
+    <script>
+        setTimeout("document.location = document.referrer",2000);
+    </script>
+</head>
+<body>
+    <hgroup>
+        @foreach (var error in ViewBag.ErrorMessages)
+        {
+            <h2>@error</h2>
+        }
+    </hgroup>
+</body>
+</html>
+
