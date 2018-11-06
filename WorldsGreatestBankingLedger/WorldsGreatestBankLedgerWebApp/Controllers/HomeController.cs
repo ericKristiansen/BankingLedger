@@ -81,7 +81,8 @@ namespace WorldsGreatestBankLedgerWebApp.Controllers
             var success = ValidateEntry(ad, out withdrawal, Validation.WithdrawalMax, Validation.WithdrawalMin);
 
             ViewBag.Message = success ? string.Format(Validation.WithdrawalSuccess, withdrawal.ToString(FormatString.CurrencyFormat)) :
-                string.Format(ErrorString.WithdrawalEntry, Validation.WithdrawalMax, Validation.WithdrawalMin);
+                string.Format(ErrorString.WithdrawalEntry, Validation.WithdrawalMax.ToString(FormatString.CurrencyFormat), 
+                    Validation.WithdrawalMin.ToString(FormatString.CurrencyFormat));
 
             if (success)
             {
@@ -104,7 +105,8 @@ namespace WorldsGreatestBankLedgerWebApp.Controllers
             var success = ValidateEntry(ad, out deposit, Validation.DepositMax, Validation.DepositMin);
 
             ViewBag.Message = success ? string.Format(Validation.DepositSuccess, deposit.ToString(FormatString.CurrencyFormat)) :
-                string.Format(ErrorString.DepositEntry, Validation.DepositMax, Validation.DepositMin);
+                string.Format(ErrorString.DepositEntry, Validation.DepositMax.ToString(FormatString.CurrencyFormat), 
+                    Validation.DepositMin.ToString(FormatString.CurrencyFormat));
 
             if (success)
             {

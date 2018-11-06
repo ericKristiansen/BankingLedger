@@ -17,3 +17,22 @@ C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\
 C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\NUnit3.TestAdapter.pdb
 C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\nunit.engine.dll
 C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\nunit.engine.api.dll
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\nunit.engine.dll
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\nunit.engine.api.dll
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\ConsoleLedger.exe.config
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\ConsoleLedger.exe
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\ConsoleLedger.pdb
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\ConsoleStrReadWrite.dll
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\Models.dll
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\nunit.framework.dll
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\ConsoleStrReadWrite.pdb
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\Models.pdb
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\nunit.framework.pdb
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\bin\Debug\nunit.framework.xml
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\obj\Debug\ConsoleLedger.csprojAssemblyReference.cache
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\obj\Debug\ConsoleLedger.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\obj\Debug\ConsoleLedger.csproj.CopyComplete
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\obj\Debug\ConsoleLedger.exe
+C:\Users\Eric\Documents\Git\WorldsGreatestBankingLedger\ConsoleLedger\obj\Debug\ConsoleLedger.pdb
