@@ -50,7 +50,7 @@ namespace ConsoleLedger.Controllers
                     case Deposit:
                         {
                             decimal d = GetDeposit();
-                            if (d > 0)
+                            if (d > Validation.DepositMin && d < Validation.DepositMax)
                             {
                                 _am.Deposit(d);
                             }
@@ -59,7 +59,7 @@ namespace ConsoleLedger.Controllers
                     case Withdrawal:
                         {
                             decimal d = GetWithdrawal();
-                            if (d > 0)
+                            if (d > Validation.WithdrawalMax && d < Validation.WithdrawalMax)
                             {
                                 _am.Withdrawal(d);
                             }
@@ -112,7 +112,8 @@ namespace ConsoleLedger.Controllers
             var success = decimal.TryParse(withdrawal, out var d) && d <= Validation.WithdrawalMax && d > Validation.WithdrawalMin;
 
             var message = success ? string.Format(Validation.WithdrawalSuccess, d.ToString(FormatString.CurrencyFormat)) :
-                string.Format(ErrorString.WithdrawalEntry, Validation.WithdrawalMax, Validation.WithdrawalMin);
+                string.Format(ErrorString.WithdrawalEntry, Validation.WithdrawalMax.ToString(FormatString.CurrencyFormat), 
+                    Validation.WithdrawalMin.ToString(FormatString.CurrencyFormat));
             _srw.DisplayMessageWithDelay(message);
 
             return d;
@@ -138,7 +139,8 @@ namespace ConsoleLedger.Controllers
             var success = decimal.TryParse(deposit, out var d) && d <= Validation.DepositMax && d > Validation.DepositMin;
 
             var message = success ? string.Format(Validation.DepositSuccess, d.ToString(FormatString.CurrencyFormat)) : 
-                string.Format(ErrorString.DepositEntry, Validation.DepositMax, Validation.DepositMin);
+                string.Format(ErrorString.DepositEntry, Validation.DepositMax.ToString(FormatString.CurrencyFormat), 
+                    Validation.DepositMin.ToString(FormatString.CurrencyFormat));
             _srw.DisplayMessageWithDelay(message);
 
             return d;
