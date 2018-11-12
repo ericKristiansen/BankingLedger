@@ -78,7 +78,7 @@ namespace WorldsGreatestBankLedgerWebApp.Controllers
         {
             GetClientDetails();
             decimal withdrawal = -1;
-            var success = ValidateEntry(ad, out withdrawal, Validation.WithdrawalMax, Validation.WithdrawalMin);
+            var success = ValidateEntry(ad.Withdrawal, out withdrawal, Validation.WithdrawalMax, Validation.WithdrawalMin);
 
             ViewBag.Message = success ? string.Format(Validation.WithdrawalSuccess, withdrawal.ToString(FormatString.CurrencyFormat)) :
                 string.Format(ErrorString.WithdrawalEntry, Validation.WithdrawalMax.ToString(FormatString.CurrencyFormat), 
@@ -102,7 +102,7 @@ namespace WorldsGreatestBankLedgerWebApp.Controllers
         {
             GetClientDetails();
             decimal deposit = -1; 
-            var success = ValidateEntry(ad, out deposit, Validation.DepositMax, Validation.DepositMin);
+            var success = ValidateEntry(ad.Deposit, out deposit, Validation.DepositMax, Validation.DepositMin);
 
             ViewBag.Message = success ? string.Format(Validation.DepositSuccess, deposit.ToString(FormatString.CurrencyFormat)) :
                 string.Format(ErrorString.DepositEntry, Validation.DepositMax.ToString(FormatString.CurrencyFormat), 
@@ -122,9 +122,10 @@ namespace WorldsGreatestBankLedgerWebApp.Controllers
         /// <param name="ad"></param>
         /// <param name="deposit"></param>
         /// <returns></returns>
-        private static bool ValidateEntry(AccountData ad, out decimal d, int max,  int min)
+        private static bool ValidateEntry(string num, out decimal d, int max,  int min)
         {
-            var success = decimal.TryParse(ad.Deposit, out d);
+            var success = decimal.TryParse(num, out d);
+
             if (success)
             {
                 success = d > min && d < max;
