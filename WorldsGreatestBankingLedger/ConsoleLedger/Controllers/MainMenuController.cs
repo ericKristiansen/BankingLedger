@@ -59,7 +59,7 @@ namespace ConsoleLedger.Controllers
                     case Withdrawal:
                         {
                             decimal d = GetWithdrawal();
-                            if (d > Validation.WithdrawalMax && d < Validation.WithdrawalMax)
+                            if (d > Validation.WithdrawalMin && d < Validation.WithdrawalMax)
                             {
                                 _am.Withdrawal(d);
                             }
@@ -109,7 +109,7 @@ namespace ConsoleLedger.Controllers
             _srw.WriteString(string.Format(Prompt.EnterWithdrawal, Validation.WithdrawalMax));
             var withdrawal = _srw.ReadString();
 
-            var success = decimal.TryParse(withdrawal, out var d) && d <= Validation.WithdrawalMax && d > Validation.WithdrawalMin;
+            var success = decimal.TryParse(withdrawal, out var d) && d < Validation.WithdrawalMax && d > Validation.WithdrawalMin;
 
             var message = success ? string.Format(Validation.WithdrawalSuccess, d.ToString(FormatString.CurrencyFormat)) :
                 string.Format(ErrorString.WithdrawalEntry, Validation.WithdrawalMax.ToString(FormatString.CurrencyFormat), 
