@@ -6,6 +6,7 @@ C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\
 C:\Users\Eric\Documents\Visual Studio 2017\Projects\WorldsGreatestBankingLedger\Models\obj\Debug\Models.pdb
 C:\Users\HenryWinkler\Source\Repos\BankingLedger\WorldsGreatestBankingLedger\Models\bin\Debug\Models.dll
 C:\Users\HenryWinkler\Source\Repos\BankingLedger\WorldsGreatestBankingLedger\Models\bin\Debug\Models.pdb
-C:\Users\HenryWinkler\Source\Repos\BankingLedger\WorldsGreatestBankingLedger\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 C:\Users\HenryWinkler\Source\Repos\BankingLedger\WorldsGreatestBankingLedger\Models\obj\Debug\Models.dll
 C:\Users\HenryWinkler\Source\Repos\BankingLedger\WorldsGreatestBankingLedger\Models\obj\Debug\Models.pdb
+C:\Users\HenryWinkler\Source\Repos\BankingLedger\WorldsGreatestBankingLedger\Models\obj\Debug\Models.csprojAssemblyReference.cache
+C:\Users\HenryWinkler\Source\Repos\BankingLedger\WorldsGreatestBankingLedger\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
